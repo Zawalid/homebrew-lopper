@@ -4,7 +4,8 @@ Homebrew tap for [Lopper](https://github.com/Zawalid/Lopper), a Mac app that fin
 folders you no longer need and removes them safely.
 
 ```bash
-brew install --cask zawalid/lopper/lopper
+brew install --cask zawalid/lopper/lopper   # the app
+brew install zawalid/lopper/lop              # the command line tool
 ```
 
 Upgrade with `brew upgrade --cask lopper`. The cask is regenerated for each release with `scripts/cask.sh` in the Lopper
