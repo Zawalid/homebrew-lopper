@@ -6,22 +6,22 @@ cask "lopper" do
 
   url "https://github.com/Zawalid/Lopper/releases/download/v#{version}/Lopper-#{version}.dmg"
   name "Lopper"
-  desc "Finds the branches, worktrees and generated folders you no longer need, and removes them safely"
+  desc "Removes branches, worktrees and generated folders you no longer need"
   homepage "https://github.com/Zawalid/Lopper"
 
   depends_on macos: :sonoma
 
   app "Lopper.app"
 
+  zap trash: [
+    "~/Library/Application Support/Lopper",
+    "~/Library/Caches/com.zawalid.lopper",
+    "~/Library/Preferences/com.zawalid.lopper.plist",
+  ]
+
   caveats <<~EOS
     Lopper is not notarized yet, so macOS asks you to confirm it the first time you open it.
     Right-click Lopper in Applications and choose Open, or run:
       xattr -dr com.apple.quarantine #{appdir}/Lopper.app
   EOS
-
-  zap trash: [
-    "~/Library/Application Support/Lopper",
-    "~/Library/Preferences/com.zawalid.lopper.plist",
-    "~/Library/Caches/com.zawalid.lopper",
-  ]
 end
