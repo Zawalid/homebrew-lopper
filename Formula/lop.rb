@@ -3,8 +3,8 @@
 class Lop < Formula
   desc "Safely remove branches, worktrees and generated folders you no longer need"
   homepage "https://github.com/Zawalid/Lopper"
-  url "https://github.com/Zawalid/Lopper/releases/download/v0.5.1/lop-0.5.1-macos.tar.gz"
-  sha256 "b9d37f7a29f3ef4f50649262996551b328a94cf6975a3c82b6ebd14958df0425"
+  url "https://github.com/Zawalid/Lopper/releases/download/v0.5.2/lop-0.5.2-macos.tar.gz"
+  sha256 "173274e4f8a689928377fa07d8bfbc8ec3548721d1f6d1caf92bddb0a80019d1"
   license "MIT"
 
   depends_on macos: :sonoma
