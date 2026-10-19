@@ -1,8 +1,8 @@
 # Homebrew cask for Lopper. Lives in the tap repository Zawalid/homebrew-lopper as Casks/lopper.rb.
 # `scripts/cask.sh <version>` prints this file with the version and the DMG's SHA-256 filled in.
 cask "lopper" do
-  version "0.5.0"
-  sha256 "78fa563def16c250ca8458ee5bbf94ff4e11130f8692ba9e95d63ac893adaa8a"
+  version "0.5.1"
+  sha256 "ceb3cbf536bc4a856876a8a6b4b85e781ece4213530c2f94cbf3958385487a2a"
 
   url "https://github.com/Zawalid/Lopper/releases/download/v#{version}/Lopper-#{version}.dmg"
   name "Lopper"
